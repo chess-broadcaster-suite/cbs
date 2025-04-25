@@ -1,10 +1,17 @@
 {
 	"name": "@chess-broadcaster-suite/uci",
-	"version": "0.5.0",
+	"version": "0.5.2",
 	"description": "",
 	"author": "noskillonlyluck",
 	"license": "MIT",
 	"type": "module",
+	"repository": "https://github.com/chess-broadcaster-suite/cbs/tree/main/packages/uci",
+	"keywords": [
+		"uci",
+		"universal chess interface",
+		"engine",
+		"chess"
+	],
 	"engines": {
 		"node": ">=20 <23",
 		"pnpm": ">=10"
