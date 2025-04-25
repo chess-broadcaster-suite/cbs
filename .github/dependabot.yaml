@@ -1,0 +1,21 @@
+# https://docs.github.com/code-security/dependabot/dependabot-version-updates/configuration-options-for-the-dependabot.yml-file
+
+version: 2
+updates:
+  - package-ecosystem: 'npm'
+    directory: '/' # Location of package manifests
+    schedule:
+      interval: 'weekly'
+    groups:
+      patches:
+        applies-to: version-updates
+        update-types: ['patch']
+      minors:
+        applies-to: version-updates
+        update-types: ['minor']
+      majors:
+        applies-to: version-updates
+        update-types: ['major']
+    commit-message:
+      prefix: 'build'
+      include: 'scope'

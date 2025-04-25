@@ -1,0 +1,38 @@
+name: Set-up Turborepo
+description: Sets up Node, installs dependencies and restores Turborepo cache
+
+inputs:
+  task:
+    description: Task to run with the action
+    required: true
+  node-version:
+    description: Node version to use
+    required: true
+
+runs:
+  using: composite
+  steps:
+    - name: Restore Turborepo cache
+      uses: actions/cache@v4
+      with:
+        path: |
+          .turbo
+          **/.turbo
+        key: ${{ runner.os }}-turbo-node${{ inputs.node-version }}-${{ inputs.task }}-${{ github.sha }}
+        restore-keys: |
+          ${{ runner.os }}-turbo-node${{ inputs.node-version }}-${{ inputs.task }}
+
+    - name: Set-up pnpm
+      uses: pnpm/action-setup@v4
+
+    - name: Set-up Node.js
+      uses: actions/setup-node@v4
+      with:
+        registry-url: 'https://registry.npmjs.org/'
+        cache: 'pnpm'
+        node-version: ${{  inputs.node-version  }}
+
+
+    - name: Install dependencies
+      shell: bash
+      run: pnpm install

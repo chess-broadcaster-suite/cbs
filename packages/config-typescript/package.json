@@ -1,0 +1,19 @@
+{
+	"name": "@chess-broadcaster-suite/config-typescript",
+	"version": "0.2.0",
+	"description": "Reusable typescript configs",
+	"author": "noskillonlyluck",
+	"license": "MIT",
+	"engines": {
+		"node": ">=20 <23 || >=24",
+		"pnpm": ">=10"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/chess-broadcasting-suite/cbs.git"
+	},
+	"type": "module",
+	"devDependencies": {
+		"prettier": "^3.4.2"
+	}
+}

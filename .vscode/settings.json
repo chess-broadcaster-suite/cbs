@@ -1,0 +1,13 @@
+{
+	"eslint.workingDirectories": [
+		{
+			"mode": "auto"
+		}
+	],
+	"eslint.useFlatConfig": true,
+	"files.associations": {
+		"*.env": "properties",
+		"*.env.example": "properties"
+	},
+	"typescript.preferences.importModuleSpecifier": "non-relative"
+}

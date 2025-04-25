@@ -1,0 +1,9 @@
+{
+	"entryPoints": [
+		"./src/index.ts"
+	],
+	"entryPointStrategy": "resolve",
+	"readme": "README.md",
+	"excludeProtected": true,
+	"excludeInternal": true
+}

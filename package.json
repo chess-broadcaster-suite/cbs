@@ -1,0 +1,46 @@
+{
+	"name": "chess-broadcaster-suite",
+	"version": "0.0.0",
+	"description": "Essential chess broadcasting toolset",
+	"scripts": {
+		"dev": "turbo dev",
+		"dev:test": "turbo dev:test",
+		"docs": "turbo docs:generate",
+		"docs:generate": "pnpm typedoc",
+		"build": "turbo build",
+		"format": "turbo format",
+		"format:fix": "turbo format:fix",
+		"lint": "turbo lint",
+		"lint:fix": "turbo lint:fix",
+		"test": "turbo test",
+		"typecheck": "turbo typecheck",
+		"prepare": "husky",
+		"prepublishOnly": "turbo build"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/chess-broadcasting-suite/cbs.git"
+	},
+	"keywords": [],
+	"author": "noskillonlyluck",
+	"bugs": {
+		"url": "https://github.com/chess-broadcasting-suite/cbs/issues"
+	},
+	"type": "module",
+	"homepage": "https://github.com/chess-broadcasting-suite/cbs#readme",
+	"devDependencies": {
+		"@commitlint/cli": "^19.8.0",
+		"@commitlint/config-conventional": "^19.8.0",
+		"@types/jest": "^29.5.14",
+		"@types/node": "^22.10.7",
+		"husky": "^9.1.7",
+		"prettier": "^3.5.3",
+		"turbo": "^2.5.0",
+		"typedoc": "^0.28.3"
+	},
+	"packageManager": "pnpm@10.9.0",
+	"engines": {
+		"node": ">=20 <23",
+		"pnpm": ">=10"
+	}
+}

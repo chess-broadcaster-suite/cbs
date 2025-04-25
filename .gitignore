@@ -1,0 +1,28 @@
+# Dependencies
+node_modules
+
+# env files
+*.env
+
+# Logs
+logs
+*.log
+
+# docs
+apps/docs
+
+# Runtime data
+pids
+*.pid
+*.seed
+
+# Cache
+.turbo
+
+# Build data
+build
+dist
+out
+
+# Platform-specific stuff
+.DS_Store

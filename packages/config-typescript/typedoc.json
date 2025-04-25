@@ -1,0 +1,7 @@
+{
+	"entryPoints": [],
+	"entryPointStrategy": "resolve",
+	"readme": "README.md",
+	"excludeProtected": true,
+	"excludeInternal": true
+}

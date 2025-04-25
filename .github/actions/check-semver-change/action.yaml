@@ -1,0 +1,35 @@
+name: Check Semver Change
+description: Check if a package got its semver changed
+
+inputs:
+  path:
+    description: Path to the workspace (e.g. packages/common)
+    required: true
+
+outputs:
+  version_changed:
+    description: Whether the version field changed between last two commits
+    value: ${{ steps.check.outputs.version_changed }}
+
+runs:
+  using: 'composite'
+  steps:
+    - name: Check if version got changed between last two commits
+      id: check
+      shell: bash
+      run: |
+        PKG_PATH="${{ inputs.path }}/package.json"
+
+        CURRENT_VERSION=$(jq -r .version "$PKG_PATH")
+        PREV_VERSION=$(git show HEAD^:"$PKG_PATH" | jq -r .version)
+
+        echo "Previous version: $PREV_VERSION"
+        echo "Current version: $CURRENT_VERSION"
+
+        if [ "$CURRENT_VERSION" != "$PREV_VERSION" ]; then
+          echo "✅ Version changed"
+          echo "version_changed=true" >> $GITHUB_OUTPUT
+        else
+          echo "❌ No version change"
+          echo "version_changed=false" >> $GITHUB_OUTPUT
+        fi
