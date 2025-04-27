@@ -10,7 +10,7 @@
 	},
 	"repository": {
 		"type": "git",
-		"url": "git+https://github.com/chess-broadcasting-suite/cbs.git"
+		"url": "git+https://github.com/chess-broadcaster-suite/cbs.git"
 	},
 	"type": "module",
 	"devDependencies": {

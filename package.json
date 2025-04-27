@@ -19,15 +19,15 @@
 	},
 	"repository": {
 		"type": "git",
-		"url": "git+https://github.com/chess-broadcasting-suite/cbs.git"
+		"url": "git+https://github.com/chess-broadcaster-suite/cbs.git"
 	},
 	"keywords": [],
 	"author": "noskillonlyluck",
 	"bugs": {
-		"url": "https://github.com/chess-broadcasting-suite/cbs/issues"
+		"url": "https://github.com/chess-broadcaster-suite/cbs/issues"
 	},
 	"type": "module",
-	"homepage": "https://github.com/chess-broadcasting-suite/cbs#readme",
+	"homepage": "https://github.com/chess-broadcaster-suite/cbs#readme",
 	"devDependencies": {
 		"@commitlint/cli": "^19.8.0",
 		"@commitlint/config-conventional": "^19.8.0",
