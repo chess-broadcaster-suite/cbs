@@ -6,7 +6,6 @@ The main engine class is a named export under @chess-broadcaster-suite/uci.
 Engine path and data callback to handle incoming messages are obligatory;
 error callback to handle raw error pipe is an optional callback.
 
-
 ### Simple Example
 ```
 import { Engine } from @chess-broadcaster-suite/uci
@@ -48,6 +47,9 @@ data [
 ]
 ```
 in your dataCallback handler.
+
+## Documentation
+See https://chess-broadcaster-suite.github.io/cbs/modules/_chess-broadcaster-suite_uci.html
 
 
 ### Changing positions and lifecycle
