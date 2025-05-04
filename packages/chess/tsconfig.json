@@ -1,0 +1,10 @@
+{
+	"$schema": "https://json.schemastore.org/tsconfig",
+	"extends": "@chess-broadcaster-suite/config-typescript/base.config.json",
+	"compilerOptions": {
+		"rootDir": "./src",
+		"outDir": "./dist",
+		"baseUrl": null // weirdly, restating this helps vitest
+	},
+	"include": ["src/**/*"]
+}
