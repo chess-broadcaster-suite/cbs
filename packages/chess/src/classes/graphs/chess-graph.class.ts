@@ -1,16 +1,14 @@
 import { ChessError } from '#classes/chess-error.class'
 import { ChessGraphAdjacencyItem, ChessGraphNode } from '#interfaces/chess-graph.interfaces'
+import { ChessMoveInterface } from '#interfaces/chess-move.interface'
 import { ChessMoveDescriptorInterface } from '#interfaces/chess-move-descriptor.interface'
 import { ChessPositionInterface } from '#interfaces/chess-position.interface'
 import { OPERATION_CREATES_GRAPH_CYCLE } from '#structs/message'
 import { randomUUID } from 'crypto'
 
-// an acyclic digraph
-export abstract class ChessGraph<
-	P extends ChessPositionInterface,
-	D extends ChessMoveDescriptorInterface,
-> {
-	protected adjacencyMap: Map<ChessGraphNode<P>, Set<ChessGraphAdjacencyItem<P, D>>>
+// an acyclic graph
+export abstract class ChessGraph<P extends ChessPositionInterface, M extends ChessMoveInterface> {
+	protected adjacencyMap: Map<ChessGraphNode<P>, Set<ChessGraphAdjacencyItem<P, M>>>
 
 	public constructor() {
 		this.adjacencyMap = new Map()
@@ -29,7 +27,7 @@ export abstract class ChessGraph<
 		target,
 		weight,
 	}: {
-		descriptor?: D
+		descriptor: ChessMoveDescriptorInterface<M> | null
 		origin: ChessGraphNode<P>
 		target: ChessGraphNode<P>
 		weight: number
@@ -48,6 +46,8 @@ export abstract class ChessGraph<
 			weight,
 		})
 		this.adjacencyMap.set(origin, children)
+
+		return true
 	}
 
 	public isChildOf({
