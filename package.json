@@ -31,8 +31,8 @@
 	"devDependencies": {
 		"@commitlint/cli": "^19.8.1",
 		"@commitlint/config-conventional": "^19.8.1",
-		"@types/jest": "^29.5.14",
-		"@types/node": "^22.15.3",
+		"@types/jest": "^30.0.0",
+		"@types/node": "^24.0.10",
 		"husky": "^9.1.7",
 		"prettier": "^3.5.3",
 		"turbo": "^2.5.4",
