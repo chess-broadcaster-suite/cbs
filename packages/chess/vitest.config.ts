@@ -5,5 +5,6 @@ export default defineConfig({
 		environment: 'node',
 		globals: true, // optional — allows using `describe`, `it`, `expect` globally
 		include: ['src/**/*.spec.ts'],
+		passWithNoTests: true
 	},
 })

@@ -1,9 +1,9 @@
 import { ChessSquare } from '#enums/chess-square.enum'
-import { ChessPiece } from '#interfaces/chess-piece.interface'
+import { ChessPieceInterface } from '#interfaces/chess-piece.interface'
 
-export function findPiece(
-	piece: ChessPiece,
-	pieces: Record<ChessSquare, ChessPiece | undefined>,
+export function findPieces(
+	piece: ChessPieceInterface,
+	pieces: Record<ChessSquare, ChessPieceInterface | undefined>,
 ): ChessSquare[] {
 	const result: ChessSquare[] = []
 

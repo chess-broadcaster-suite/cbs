@@ -41,7 +41,7 @@ export class ChessGame<
 		this.root = this.addNode(rootPosition)
 	}
 
-	public addMainline(parentNode: ChessGraphNode<P>, position: P): ChessGraphNode<P> {
+	public addMainline(parentNode: ChessGraphNode<P>, position: P): ChessGraphNode<P> | undefined {
 		let children = this.adjacencyMap.get(parentNode)
 		if (!children) {
 			children = new Set()
@@ -52,7 +52,12 @@ export class ChessGame<
 			id: randomUUID(),
 			position,
 		}
-		const descriptor = this.arbiter.describeMove(parentNode.position, position)
+		const move = this.arbiter.findAMove(parentNode.position, position)
+		if (!move) {
+			return
+		}
+		const descriptor = this.arbiter.describeMove(move, parentNode.position)
+
 		const weight = 0
 
 		children.values().forEach((child) => (child.weight += 1))
@@ -79,7 +84,12 @@ export class ChessGame<
 			id: randomUUID(),
 			position,
 		}
-		const descriptor = this.arbiter.describeMove(parentNode.position, position)
+		const move = this.arbiter.findAMove(parentNode.position, position)
+		if (!move) {
+			return undefined
+		}
+
+		const descriptor = this.arbiter.describeMove(move, parentNode.position)
 		const weight = children.size
 
 		children.add({

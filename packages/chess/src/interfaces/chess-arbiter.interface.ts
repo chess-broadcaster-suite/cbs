@@ -6,11 +6,13 @@ export interface ChessArbiterInterface<
 	P extends ChessPositionInterface,
 	M extends ChessMoveInterface,
 > {
-	describeMove(origin: P, target: P): ChessMoveDescriptorInterface<M> | null
+	describeMove(move: M, originPosition: P): ChessMoveDescriptorInterface<M> | null
 	describePosition(position: P): string
+	findAMove(originPosition: P, targetPosition: P): M | null
 	getLegalMoves(position: P): Array<M>
 	isLegalMove(move: M, position: P): boolean
 	isLegalPosition(position: P): boolean
+	isIdenticalPosition(position: P, anotherPosition: P): boolean
 	makeAMove(move: ChessMoveInterface, position: P): P | null
 	reconstruct(description: string): P | null
 }

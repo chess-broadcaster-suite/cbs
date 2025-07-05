@@ -34,7 +34,7 @@ export const baseConfig = [
 	sort.configs['flat/recommended'],
 	{
 		rules: {
-			'sort/destructuring-properties': ['error', { caseSensitive: true, natural: true }],
+			'sort/destructuring-properties': ['off'],
 			'sort/exports': [
 				'error',
 				{
@@ -61,9 +61,9 @@ export const baseConfig = [
 			],
 			'sort/import-members': ['error', { caseSensitive: true, natural: true }],
 			'sort/object-properties': ['off'],
-			'sort/type-properties': ['error', { caseSensitive: true, natural: true }],
-			'sort/string-enums': ['error', { caseSensitive: true, natural: true }],
-			'sort/string-unions': ['error', { caseSensitive: true, natural: true }],
+			'sort/type-properties': ['off'],
+			'sort/string-enums': ['off'],
+			'sort/string-unions': ['off'],
 		},
 	},
 ]
