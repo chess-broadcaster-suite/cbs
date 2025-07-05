@@ -1,4 +1,4 @@
-import { GoUCIParams } from '#types/uci.types'
+import type { GoUCIParams } from '#types/uci.types'
 
 /**
  * Builds go UCI command

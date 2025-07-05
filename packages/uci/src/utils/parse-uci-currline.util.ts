@@ -1,4 +1,4 @@
-import { UCICurrline } from '#types/uci.types'
+import type { UCICurrline } from '#types/uci.types'
 
 /**
  * Parse UCICurrline with optional cpunr parameter

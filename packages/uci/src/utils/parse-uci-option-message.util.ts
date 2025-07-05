@@ -1,3 +1,5 @@
+import type { UCIInvalidMessageCallback, UCIOptionMessage } from '#types/uci.types'
+
 import { UCIMessageType, UCIOptionToken, UCIOptionType } from '#enums/uci.enums'
 import {
 	EXPECTED_INTEGER,
@@ -6,7 +8,6 @@ import {
 	NO_TOKEN_FOR_VALUE,
 } from '#structs/messages'
 import { UCIError } from '#structs/uci-error.class'
-import { UCIInvalidMessageCallback, UCIOptionMessage } from '#types/uci.types'
 
 /**
  * Parse option message; assuming first word is 'option'.

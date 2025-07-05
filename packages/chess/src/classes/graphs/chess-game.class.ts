@@ -1,10 +1,11 @@
+import type { GameResult } from '#enums/game-result.enum'
+import type { ChessArbiterInterface } from '#interfaces/chess-arbiter.interface'
+import type { ChessGraphNode } from '#interfaces/chess-graph.interfaces'
+import type { ChessMoveInterface } from '#interfaces/chess-move.interface'
+import type { ChessPlayer } from '#interfaces/chess-player.interface'
+import type { ChessPositionInterface } from '#interfaces/chess-position.interface'
+
 import { ChessGraph } from '#classes/graphs/chess-graph.class'
-import { GameResult } from '#enums/game-result.enum'
-import { ChessArbiterInterface } from '#interfaces/chess-arbiter.interface'
-import { ChessGraphNode } from '#interfaces/chess-graph.interfaces'
-import { ChessMoveInterface } from '#interfaces/chess-move.interface'
-import { ChessPlayer } from '#interfaces/chess-player.interface'
-import { ChessPositionInterface } from '#interfaces/chess-position.interface'
 import { randomUUID } from 'crypto'
 
 // tree with a single root

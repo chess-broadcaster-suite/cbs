@@ -1,7 +1,8 @@
+import type { UCIInfoMessage, UCIInvalidMessageCallback } from '#types/uci.types'
+
 import { UCIInfoNumericToken, UCIInfoToken, UCIMessageType } from '#enums/uci.enums'
 import { EXPECTED_INTEGER, INVALID_INFO_MESSAGE, NO_TOKEN_FOR_VALUE } from '#structs/messages'
 import { UCIError } from '#structs/uci-error.class'
-import { UCIInfoMessage, UCIInvalidMessageCallback } from '#types/uci.types'
 import { parseUCICurrline } from '#utils/parse-uci-currline.util'
 import { parseUCIScore } from '#utils/parse-uci-score.util'
 

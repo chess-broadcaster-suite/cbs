@@ -1,4 +1,4 @@
-import { ChessColour } from '#enums/chess-colour.enum'
+import type { ChessColour } from '#enums/chess-colour.enum'
 
 export interface ChessPieceInterface {
 	colour: ChessColour

@@ -1,4 +1,4 @@
-import { PositionUCIParams } from '#types/uci.types'
+import type { PositionUCIParams } from '#types/uci.types'
 
 /**
  * Builds position UCI command

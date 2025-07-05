@@ -1,10 +1,11 @@
+import type { ChildProcess } from 'child_process'
+
 import {
 	ENGINE_NOT_INITIALIZED,
 	ERROR_WRITING_TO_STDIN,
 	STDIN_NOT_AVAILABLE,
 } from '#structs/messages'
 import { UCIError } from '#structs/uci-error.class'
-import { ChildProcess } from 'child_process'
 
 /**
  * Write uci message, adding the \n terminator

@@ -1,8 +1,9 @@
+import type { ChessMove } from '#variants/default/types/chess-move.type'
+import type { ChessPosition } from '#variants/default/types/chess-position.type'
+
 import { ChessColour } from '#enums/chess-colour.enum'
 import { ChessSquare } from '#enums/chess-square.enum'
 import { ChessPieceType } from '#variants/default/enums/chess-piece-type.enum'
-import { ChessMove } from '#variants/default/types/chess-move.type'
-import { ChessPosition } from '#variants/default/types/chess-position.type'
 import { isIdenticalPosition } from '#variants/default/utils/is-identical-position.util'
 import { isLegalMove } from '#variants/default/utils/is-legal-move.util'
 import { makeALegalMove } from '#variants/default/utils/make-a-legal-move.util'

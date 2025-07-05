@@ -1,5 +1,6 @@
+import type { ChessPosition } from '#variants/default/types/chess-position.type'
+
 import { ChessSquare } from '#enums/chess-square.enum'
-import { ChessPosition } from '#variants/default/types/chess-position.type'
 
 export function isIdenticalPosition(
 	position: ChessPosition,

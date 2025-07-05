@@ -1,3 +1,4 @@
+import type { UCIInterface } from '#interfaces/uci.interfaces'
 import type {
 	GoUCIParams,
 	PositionUCIParams,
@@ -12,9 +13,10 @@ import type {
 	UCIOKMessage,
 	UCIReadyokMessage,
 } from '#types/uci.types'
+import type { CallbackQueue, CallbackSet } from '#types/util.types'
+import type { ChildProcess } from 'child_process'
 
 import { UCIEngineState, UCIMessageType, UCISearchType } from '#enums/uci.enums'
-import { UCIInterface } from '#interfaces/uci.interfaces'
 import {
 	COMPLETE_ANALYSIS_TIMEOUT,
 	COMPLETE_INFINITE_ANALYSIS,
@@ -30,12 +32,11 @@ import {
 	UNABLE_TO_SET_POSITION,
 } from '#structs/messages'
 import { UCIError } from '#structs/uci-error.class'
-import { CallbackQueue, CallbackSet } from '#types/util.types'
 import { buildGoString } from '#utils/build-go-string.util'
 import { buildPositionString } from '#utils/build-position-string.util'
 import { parseUCIMessage } from '#utils/parse-uci-message.util'
 import { writeUCIMessage } from '#utils/write-uci-message.util'
-import { ChildProcess, exec } from 'child_process'
+import { exec } from 'child_process'
 
 const DEFAULT_UCI_OK_TIMEOUT_MS = 10000
 const DEFAULT_ISREADY_TIMEOUT_MS = 10000

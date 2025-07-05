@@ -1,6 +1,7 @@
+import type { ChessPiece } from '#variants/default/types/chess-piece.type'
+
 import { ChessColour } from '#enums/chess-colour.enum'
 import { ChessPieceType } from '#variants/default/enums/chess-piece-type.enum'
-import { ChessPiece } from '#variants/default/types/chess-piece.type'
 
 export function parsePiece(subfen: string): ChessPiece | null {
 	if (subfen.length > 0) {

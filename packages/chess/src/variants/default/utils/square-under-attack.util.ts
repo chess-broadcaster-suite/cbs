@@ -1,8 +1,9 @@
+import type { ChessSquare } from '#enums/chess-square.enum'
+import type { ChessPiece } from '#variants/default/types/chess-piece.type'
+
 import { ChessColour } from '#enums/chess-colour.enum'
-import { ChessSquare } from '#enums/chess-square.enum'
 import { squareToCoordinates } from '#utils/square-to-coordinates.util'
 import { ChessPieceType } from '#variants/default/enums/chess-piece-type.enum'
-import { ChessPiece } from '#variants/default/types/chess-piece.type'
 
 export function squareUnderAttack(
 	square: ChessSquare,

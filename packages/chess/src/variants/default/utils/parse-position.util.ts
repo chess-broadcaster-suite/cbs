@@ -1,8 +1,9 @@
+import type { ChessPosition } from '#variants/default/types/chess-position.type'
+
 import { ChessColour } from '#enums/chess-colour.enum'
 import { findPiece } from '#utils/find-piece.util'
 import { parseSquare } from '#utils/parse-square.util'
 import { ChessPieceType } from '#variants/default/enums/chess-piece-type.enum'
-import { ChessPosition } from '#variants/default/types/chess-position.type'
 import { isLegalPosition } from '#variants/default/utils/is-legal-position.util'
 import { parseCastling } from '#variants/default/utils/parse-castling.util'
 import { parsePieces } from '#variants/default/utils/parse-pieces.util'

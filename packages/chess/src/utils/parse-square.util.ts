@@ -1,4 +1,5 @@
-import { ChessSquare } from '#enums/chess-square.enum'
+import type { ChessSquare } from '#enums/chess-square.enum'
+
 import { parseFile } from '#utils/parse-file.util'
 import { parseRank } from '#utils/parse-rank.util'
 import { squareFromCoordinates } from '#utils/square-from-coordinates.util'

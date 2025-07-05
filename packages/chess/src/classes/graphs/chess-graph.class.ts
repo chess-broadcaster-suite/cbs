@@ -1,8 +1,9 @@
+import type { ChessGraphAdjacencyItem, ChessGraphNode } from '#interfaces/chess-graph.interfaces'
+import type { ChessMoveInterface } from '#interfaces/chess-move.interface'
+import type { ChessMoveDescriptorInterface } from '#interfaces/chess-move-descriptor.interface'
+import type { ChessPositionInterface } from '#interfaces/chess-position.interface'
+
 import { ChessError } from '#classes/chess-error.class'
-import { ChessGraphAdjacencyItem, ChessGraphNode } from '#interfaces/chess-graph.interfaces'
-import { ChessMoveInterface } from '#interfaces/chess-move.interface'
-import { ChessMoveDescriptorInterface } from '#interfaces/chess-move-descriptor.interface'
-import { ChessPositionInterface } from '#interfaces/chess-position.interface'
 import { OPERATION_CREATES_GRAPH_CYCLE } from '#structs/message'
 import { randomUUID } from 'crypto'
 

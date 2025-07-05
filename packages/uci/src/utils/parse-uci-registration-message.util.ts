@@ -1,5 +1,6 @@
+import type { UCIInvalidMessageCallback, UCIRegistrationMessage } from '#types/uci.types'
+
 import { UCIMessageType, UCIRegistrationStatus } from '#enums/uci.enums'
-import { UCIInvalidMessageCallback, UCIRegistrationMessage } from '#types/uci.types'
 
 /**
  * Parse registration message; assuming first word is 'registration'.

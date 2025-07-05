@@ -1,5 +1,6 @@
+import type { Castling } from '#variants/default/types/castling.type'
+
 import { fileToString } from '#utils/file-to-string.util'
-import { Castling } from '#variants/default/types/castling.type'
 
 export function castlingToString(castling: Castling): string {
 	let result = ''

@@ -1,9 +1,10 @@
+import type { ChessMove } from '#variants/default/types/chess-move.type'
+import type { ChessPosition } from '#variants/default/types/chess-position.type'
+
 import { ChessColour } from '#enums/chess-colour.enum'
 import { ChessSquare } from '#enums/chess-square.enum'
 import { squareToCoordinates } from '#utils/square-to-coordinates.util'
 import { ChessPieceType } from '#variants/default/enums/chess-piece-type.enum'
-import { ChessMove } from '#variants/default/types/chess-move.type'
-import { ChessPosition } from '#variants/default/types/chess-position.type'
 import { copyPosition } from '#variants/default/utils/copy-position.util'
 
 // asserting legal move in a legal position

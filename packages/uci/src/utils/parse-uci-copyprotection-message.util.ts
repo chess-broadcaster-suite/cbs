@@ -1,5 +1,6 @@
+import type { UCICopyprotectionMessage, UCIInvalidMessageCallback } from '#types/uci.types'
+
 import { UCICopyProtectionStatus, UCIMessageType } from '#enums/uci.enums'
-import { UCICopyprotectionMessage, UCIInvalidMessageCallback } from '#types/uci.types'
 
 /**
  * Parse copyprotection message; assuming first word is 'copyprotection'.

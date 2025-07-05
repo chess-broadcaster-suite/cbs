@@ -1,7 +1,8 @@
-import { ChessArbiterInterface } from '#interfaces/chess-arbiter.interface'
-import { ChessMoveDescriptorInterface } from '#interfaces/chess-move-descriptor.interface'
-import { ChessMove } from '#variants/default/types/chess-move.type'
-import { ChessPosition } from '#variants/default/types/chess-position.type'
+import type { ChessArbiterInterface } from '#interfaces/chess-arbiter.interface'
+import type { ChessMoveDescriptorInterface } from '#interfaces/chess-move-descriptor.interface'
+import type { ChessMove } from '#variants/default/types/chess-move.type'
+import type { ChessPosition } from '#variants/default/types/chess-position.type'
+
 import { describeLegalMove } from '#variants/default/utils/describe-legal-move.util'
 import { findAMove } from '#variants/default/utils/find-a-move.util'
 import { getLegalMoves } from '#variants/default/utils/get-legal.moves'

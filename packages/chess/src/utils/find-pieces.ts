@@ -1,5 +1,6 @@
+import type { ChessPieceInterface } from '#interfaces/chess-piece.interface'
+
 import { ChessSquare } from '#enums/chess-square.enum'
-import { ChessPieceInterface } from '#interfaces/chess-piece.interface'
 
 export function findPieces(
 	piece: ChessPieceInterface,

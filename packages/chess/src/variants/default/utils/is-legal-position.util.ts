@@ -1,9 +1,10 @@
+import type { ChessFile } from '#enums/chess-file.enum'
+import type { ChessPosition } from '#variants/default/types/chess-position.type'
+
 import { ChessColour } from '#enums/chess-colour.enum'
-import { ChessFile } from '#enums/chess-file.enum'
 import { ChessSquare } from '#enums/chess-square.enum'
 import { fileFromSquare } from '#utils/file-from-square.util'
 import { ChessPieceType } from '#variants/default/enums/chess-piece-type.enum'
-import { ChessPosition } from '#variants/default/types/chess-position.type'
 import { squareUnderAttack } from '#variants/default/utils/square-under-attack.util'
 
 export function isLegalPosition(position: ChessPosition): boolean {

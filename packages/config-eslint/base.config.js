@@ -29,6 +29,7 @@ export const baseConfig = [
 					],
 				},
 			],
+			'@typescript-eslint/consistent-type-imports': ['error'],
 		},
 	},
 	sort.configs['flat/recommended'],

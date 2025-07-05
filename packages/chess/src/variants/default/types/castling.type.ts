@@ -1,4 +1,4 @@
-import { ChessSquare } from '#enums/chess-square.enum'
+import type { ChessSquare } from '#enums/chess-square.enum'
 
 export type Castling = {
 	blackK?:

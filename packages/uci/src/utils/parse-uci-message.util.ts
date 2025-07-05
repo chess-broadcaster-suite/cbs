@@ -1,11 +1,12 @@
-import { UCIMessageType } from '#enums/uci.enums'
-import { UCIOK, UCIREADYOK } from '#structs/consts'
-import {
+import type {
 	AnyUCIMessage,
 	UCIInvalidMessageCallback,
 	UCIOKMessage,
 	UCIReadyokMessage,
 } from '#types/uci.types'
+
+import { UCIMessageType } from '#enums/uci.enums'
+import { UCIOK, UCIREADYOK } from '#structs/consts'
 import { parseUCIBestmoveMessage } from '#utils/parse-uci-bestmove-message.util'
 import { parseUCICopyProtectionMessage } from '#utils/parse-uci-copyprotection-message.util'
 import { parseUCIIDMessage } from '#utils/parse-uci-id-message.util'

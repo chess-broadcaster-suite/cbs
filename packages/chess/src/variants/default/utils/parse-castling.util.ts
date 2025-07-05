@@ -1,5 +1,6 @@
+import type { Castling } from '#variants/default/types/castling.type'
+
 import { ChessSquare } from '#enums/chess-square.enum'
-import { Castling } from '#variants/default/types/castling.type'
 
 export function parseCastling(subfen: string): Castling | null {
 	const result: Castling = {}

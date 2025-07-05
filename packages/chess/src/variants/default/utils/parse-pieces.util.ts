@@ -1,5 +1,6 @@
-import { ChessSquare } from '#enums/chess-square.enum'
-import { ChessPiece } from '#variants/default/types/chess-piece.type'
+import type { ChessSquare } from '#enums/chess-square.enum'
+import type { ChessPiece } from '#variants/default/types/chess-piece.type'
+
 import { parsePiece } from '#variants/default/utils/parse-piece.util'
 
 export function parsePieces(subfen: string): Record<ChessSquare, ChessPiece | undefined> | null {

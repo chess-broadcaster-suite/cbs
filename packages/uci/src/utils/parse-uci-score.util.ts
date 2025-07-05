@@ -1,7 +1,8 @@
+import type { UCIScore } from '#types/uci.types'
+
 import { UCIScoreToken } from '#enums/uci.enums'
 import { EXPECTED_INTEGER, INVALID_SCORE, NO_TOKEN_FOR_VALUE } from '#structs/messages'
 import { UCIError } from '#structs/uci-error.class'
-import { UCIScore } from '#types/uci.types'
 
 /**
  * Parse UCI score from raw substring

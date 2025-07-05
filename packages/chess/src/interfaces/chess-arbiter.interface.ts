@@ -1,6 +1,6 @@
-import { ChessMoveInterface } from '#interfaces/chess-move.interface'
-import { ChessMoveDescriptorInterface } from '#interfaces/chess-move-descriptor.interface'
-import { ChessPositionInterface } from '#interfaces/chess-position.interface'
+import type { ChessMoveInterface } from '#interfaces/chess-move.interface'
+import type { ChessMoveDescriptorInterface } from '#interfaces/chess-move-descriptor.interface'
+import type { ChessPositionInterface } from '#interfaces/chess-position.interface'
 
 export interface ChessArbiterInterface<
 	P extends ChessPositionInterface,

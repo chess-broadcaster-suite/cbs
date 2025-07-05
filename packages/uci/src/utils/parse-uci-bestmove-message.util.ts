@@ -1,5 +1,6 @@
+import type { UCIBestmoveMessage, UCIInvalidMessageCallback } from '#types/uci.types'
+
 import { UCIMessageType } from '#enums/uci.enums'
-import { UCIBestmoveMessage, UCIInvalidMessageCallback } from '#types/uci.types'
 
 /**
  * Parse bestmove message; assuming first word is 'bestmove'.
