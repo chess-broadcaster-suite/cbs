@@ -29,14 +29,14 @@
 	"type": "module",
 	"homepage": "https://github.com/chess-broadcaster-suite/cbs#readme",
 	"devDependencies": {
-		"@commitlint/cli": "^19.8.0",
-		"@commitlint/config-conventional": "^19.8.0",
+		"@commitlint/cli": "^19.8.1",
+		"@commitlint/config-conventional": "^19.8.1",
 		"@types/jest": "^29.5.14",
 		"@types/node": "^22.15.3",
 		"husky": "^9.1.7",
 		"prettier": "^3.5.3",
-		"turbo": "^2.5.2",
-		"typedoc": "^0.28.3"
+		"turbo": "^2.5.4",
+		"typedoc": "^0.28.7"
 	},
 	"packageManager": "pnpm@10.12.4",
 	"engines": {
