@@ -4,11 +4,9 @@ import { ChessColour } from '#enums/chess-colour.enum'
 import { ChessPieceType } from '#variants/fischer/enums/chess-piece-type.enum'
 
 export function parsePiece(subfen: string): ChessPiece | null {
-	if (subfen.length > 0) {
-		return null
-	}
+	const trimmed = subfen.trim()
 
-	switch (subfen) {
+	switch (trimmed[0]) {
 		case 'K':
 			return {
 				colour: ChessColour.WHITE,

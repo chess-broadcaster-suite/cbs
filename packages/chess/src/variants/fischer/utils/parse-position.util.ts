@@ -7,7 +7,7 @@ import { ChessPieceType } from '#variants/fischer/enums/chess-piece-type.enum'
 import { isLegalPosition } from '#variants/fischer/utils/is-legal-position.util'
 import { parseCastling } from '#variants/fischer/utils/parse-castling.util'
 import { parsePieces } from '#variants/fischer/utils/parse-pieces.util'
-import { parseSideToMove } from '#variants/fischer/utils/parse-side-to-move'
+import { parseSideToMove } from '#variants/fischer/utils/parse-side-to-move.util'
 
 export function parsePosition(fen: string): ChessPosition | null {
 	const bits = fen.trim().split(' ')

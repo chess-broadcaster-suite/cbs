@@ -8,7 +8,7 @@ describe(parseSquare, () => {
 		expect(parseSquare('g3')).toBe(ChessSquare.G3)
 	})
 
-	it('can trim whitespace', () => {
+	it('trims whitespace', () => {
 		expect(parseSquare('  a3.  ')).toBe(ChessSquare.A3)
 		expect(parseSquare('\n\n \n\n b4 ')).toBe(ChessSquare.B4)
 	})

@@ -13,7 +13,7 @@ describe(parseRank, () => {
 		expect(parseRank('8')).toBe(ChessRank.EIGHTH)
 	})
 
-	it('can trim whitespace', () => {
+	it('trims whitespace', () => {
 		expect(parseRank('   1')).toBe(ChessRank.FIRST)
 		expect(parseRank('\t   2 \n\n')).toBe(ChessRank.SECOND)
 	})

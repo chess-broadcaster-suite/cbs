@@ -1,10 +1,9 @@
 import { ChessColour } from '#enums/chess-colour.enum'
 
 export function parseSideToMove(subfen: string): ChessColour | null {
-	if (subfen.length < 1) {
-		return null
-	}
-	switch (subfen[0]) {
+	const trimmed = subfen.trim()
+
+	switch (trimmed[0]?.toLowerCase()) {
 		case 'w':
 			return ChessColour.WHITE
 		case 'b':

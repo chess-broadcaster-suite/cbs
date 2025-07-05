@@ -14,7 +14,7 @@ describe(parseFile, () => {
 	})
 })
 
-it('can trim whitespace', () => {
+it('trims whitespace', () => {
 	expect(parseFile('   A')).toBe(ChessFile.A)
 	expect(parseFile('\t   B \n\n')).toBe(ChessFile.B)
 })
