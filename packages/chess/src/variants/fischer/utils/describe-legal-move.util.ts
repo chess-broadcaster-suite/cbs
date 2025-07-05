@@ -1,6 +1,6 @@
 import type { ChessMoveDescriptorInterface } from '#interfaces/chess-move-descriptor.interface'
-import type { ChessMove } from '#variants/default/types/chess-move.type'
-import type { ChessPosition } from '#variants/default/types/chess-position.type'
+import type { ChessMove } from '#variants/fischer/types/chess-move.type'
+import type { ChessPosition } from '#variants/fischer/types/chess-position.type'
 
 import { ChessColour } from '#enums/chess-colour.enum'
 import { fileFromSquare } from '#utils/file-from-square.util'
@@ -8,11 +8,11 @@ import { fileToString } from '#utils/file-to-string.util'
 import { rankToString } from '#utils/rank-to-string.util'
 import { squareToCoordinates } from '#utils/square-to-coordinates.util'
 import { squareToString } from '#utils/square-to-string.util'
-import { ChessPieceType } from '#variants/default/enums/chess-piece-type.enum'
-import { getLegalMoves } from '#variants/default/utils/get-legal.moves'
-import { makeALegalMove } from '#variants/default/utils/make-a-legal-move.util'
-import { pieceToString } from '#variants/default/utils/piece-to-string.util'
-import { squareUnderAttack } from '#variants/default/utils/square-under-attack.util'
+import { ChessPieceType } from '#variants/fischer/enums/chess-piece-type.enum'
+import { getLegalMoves } from '#variants/fischer/utils/get-legal.moves'
+import { makeALegalMove } from '#variants/fischer/utils/make-a-legal-move.util'
+import { pieceToString } from '#variants/fischer/utils/piece-to-string.util'
+import { squareUnderAttack } from '#variants/fischer/utils/square-under-attack.util'
 
 // asserting legal move in a legal position
 export function describeLegalMove(

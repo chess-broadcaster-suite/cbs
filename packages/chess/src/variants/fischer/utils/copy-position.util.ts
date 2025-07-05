@@ -1,5 +1,5 @@
-import type { ChessPosition } from '#variants/default/types/chess-position.type'
-import type { PositionHistory } from '#variants/default/types/position-history.type'
+import type { ChessPosition } from '#variants/fischer/types/chess-position.type'
+import type { PositionHistory } from '#variants/fischer/types/position-history.type'
 
 export function copyPosition(position: ChessPosition): ChessPosition {
 	return {

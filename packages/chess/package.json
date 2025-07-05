@@ -52,7 +52,8 @@
 		"#*": "./dist/*.js"
 	},
 	"exports": {
-		".": "./dist/index.js"
+		"./generics": "./dist/index.js",
+		"./fischer": "./dist/variants/fischer/index.js"
 	},
 	"files": [
 		"dist"

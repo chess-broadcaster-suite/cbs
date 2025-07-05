@@ -1,11 +1,11 @@
-import type { ChessMove } from '#variants/default/types/chess-move.type'
-import type { ChessPosition } from '#variants/default/types/chess-position.type'
+import type { ChessMove } from '#variants/fischer/types/chess-move.type'
+import type { ChessPosition } from '#variants/fischer/types/chess-position.type'
 
 import { ChessColour } from '#enums/chess-colour.enum'
 import { ChessSquare } from '#enums/chess-square.enum'
 import { squareToCoordinates } from '#utils/square-to-coordinates.util'
-import { ChessPieceType } from '#variants/default/enums/chess-piece-type.enum'
-import { squareUnderAttack } from '#variants/default/utils/square-under-attack.util'
+import { ChessPieceType } from '#variants/fischer/enums/chess-piece-type.enum'
+import { squareUnderAttack } from '#variants/fischer/utils/square-under-attack.util'
 
 export function isLegalMove(move: ChessMove, position: ChessPosition): boolean {
 	const { pieces, sideToMove } = position

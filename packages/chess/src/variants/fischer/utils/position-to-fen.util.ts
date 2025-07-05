@@ -1,11 +1,11 @@
-import type { ChessPiece } from '#variants/default/types/chess-piece.type'
-import type { ChessPosition } from '#variants/default/types/chess-position.type'
+import type { ChessPiece } from '#variants/fischer/types/chess-piece.type'
+import type { ChessPosition } from '#variants/fischer/types/chess-position.type'
 
 import { ChessColour } from '#enums/chess-colour.enum'
 import { ChessSquare } from '#enums/chess-square.enum'
 import { squareToString } from '#utils/square-to-string.util'
-import { castlingToString } from '#variants/default/utils/castling-to-string.util'
-import { pieceToString } from '#variants/default/utils/piece-to-string.util'
+import { castlingToString } from '#variants/fischer/utils/castling-to-string.util'
+import { pieceToString } from '#variants/fischer/utils/piece-to-string.util'
 
 export function positionToFen(position: ChessPosition): string {
 	const pieces = piecesToString(position.pieces)

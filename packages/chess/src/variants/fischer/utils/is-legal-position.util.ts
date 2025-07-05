@@ -1,11 +1,11 @@
 import type { ChessFile } from '#enums/chess-file.enum'
-import type { ChessPosition } from '#variants/default/types/chess-position.type'
+import type { ChessPosition } from '#variants/fischer/types/chess-position.type'
 
 import { ChessColour } from '#enums/chess-colour.enum'
 import { ChessSquare } from '#enums/chess-square.enum'
 import { fileFromSquare } from '#utils/file-from-square.util'
-import { ChessPieceType } from '#variants/default/enums/chess-piece-type.enum'
-import { squareUnderAttack } from '#variants/default/utils/square-under-attack.util'
+import { ChessPieceType } from '#variants/fischer/enums/chess-piece-type.enum'
+import { squareUnderAttack } from '#variants/fischer/utils/square-under-attack.util'
 
 export function isLegalPosition(position: ChessPosition): boolean {
 	let whiteKingSquare: ChessSquare | undefined

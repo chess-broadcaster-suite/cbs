@@ -1,5 +1,5 @@
 import type { ChessSquare } from '#enums/chess-square.enum'
-import type { Castling } from '#variants/default/types/castling.type'
+import type { Castling } from '#variants/fischer/types/castling.type'
 
 export type PositionHistory = {
 	castling: Castling

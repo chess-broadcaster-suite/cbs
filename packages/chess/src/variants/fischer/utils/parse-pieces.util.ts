@@ -1,7 +1,7 @@
 import type { ChessSquare } from '#enums/chess-square.enum'
-import type { ChessPiece } from '#variants/default/types/chess-piece.type'
+import type { ChessPiece } from '#variants/fischer/types/chess-piece.type'
 
-import { parsePiece } from '#variants/default/utils/parse-piece.util'
+import { parsePiece } from '#variants/fischer/utils/parse-piece.util'
 
 export function parsePieces(subfen: string): Record<ChessSquare, ChessPiece | undefined> | null {
 	const bits = subfen.split('/')

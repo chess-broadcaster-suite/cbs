@@ -1,12 +1,12 @@
-import type { ChessMove } from '#variants/default/types/chess-move.type'
-import type { ChessPosition } from '#variants/default/types/chess-position.type'
+import type { ChessMove } from '#variants/fischer/types/chess-move.type'
+import type { ChessPosition } from '#variants/fischer/types/chess-position.type'
 
 import { ChessColour } from '#enums/chess-colour.enum'
 import { ChessSquare } from '#enums/chess-square.enum'
-import { ChessPieceType } from '#variants/default/enums/chess-piece-type.enum'
-import { isIdenticalPosition } from '#variants/default/utils/is-identical-position.util'
-import { isLegalMove } from '#variants/default/utils/is-legal-move.util'
-import { makeALegalMove } from '#variants/default/utils/make-a-legal-move.util'
+import { ChessPieceType } from '#variants/fischer/enums/chess-piece-type.enum'
+import { isIdenticalPosition } from '#variants/fischer/utils/is-identical-position.util'
+import { isLegalMove } from '#variants/fischer/utils/is-legal-move.util'
+import { makeALegalMove } from '#variants/fischer/utils/make-a-legal-move.util'
 
 export function findAMove(
 	originPosition: ChessPosition,

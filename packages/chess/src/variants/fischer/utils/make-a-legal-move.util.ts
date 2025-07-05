@@ -1,11 +1,11 @@
-import type { ChessMove } from '#variants/default/types/chess-move.type'
-import type { ChessPosition } from '#variants/default/types/chess-position.type'
+import type { ChessMove } from '#variants/fischer/types/chess-move.type'
+import type { ChessPosition } from '#variants/fischer/types/chess-position.type'
 
 import { ChessColour } from '#enums/chess-colour.enum'
 import { ChessSquare } from '#enums/chess-square.enum'
 import { squareToCoordinates } from '#utils/square-to-coordinates.util'
-import { ChessPieceType } from '#variants/default/enums/chess-piece-type.enum'
-import { copyPosition } from '#variants/default/utils/copy-position.util'
+import { ChessPieceType } from '#variants/fischer/enums/chess-piece-type.enum'
+import { copyPosition } from '#variants/fischer/utils/copy-position.util'
 
 // asserting legal move in a legal position
 export function makeALegalMove(move: ChessMove, position: ChessPosition): ChessPosition {

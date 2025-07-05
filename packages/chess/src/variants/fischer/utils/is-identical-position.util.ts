@@ -1,4 +1,4 @@
-import type { ChessPosition } from '#variants/default/types/chess-position.type'
+import type { ChessPosition } from '#variants/fischer/types/chess-position.type'
 
 import { ChessSquare } from '#enums/chess-square.enum'
 

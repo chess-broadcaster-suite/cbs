@@ -4,7 +4,7 @@ import { baseConfig } from '@chess-broadcaster-suite/config-eslint/base'
 export default [
 	...baseConfig,
 	{
-		files: ['src/index.ts'],
+		files: ['src/index.ts', 'src/variants/fischer/index.ts'],
 		rules: {
 			'@typescript-eslint/no-restricted-imports': 'off',
 		},

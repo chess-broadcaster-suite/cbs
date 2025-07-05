@@ -1,13 +1,13 @@
-import type { ChessPosition } from '#variants/default/types/chess-position.type'
+import type { ChessPosition } from '#variants/fischer/types/chess-position.type'
 
 import { ChessColour } from '#enums/chess-colour.enum'
 import { findPiece } from '#utils/find-piece.util'
 import { parseSquare } from '#utils/parse-square.util'
-import { ChessPieceType } from '#variants/default/enums/chess-piece-type.enum'
-import { isLegalPosition } from '#variants/default/utils/is-legal-position.util'
-import { parseCastling } from '#variants/default/utils/parse-castling.util'
-import { parsePieces } from '#variants/default/utils/parse-pieces.util'
-import { parseSideToMove } from '#variants/default/utils/parse-side-to-move'
+import { ChessPieceType } from '#variants/fischer/enums/chess-piece-type.enum'
+import { isLegalPosition } from '#variants/fischer/utils/is-legal-position.util'
+import { parseCastling } from '#variants/fischer/utils/parse-castling.util'
+import { parsePieces } from '#variants/fischer/utils/parse-pieces.util'
+import { parseSideToMove } from '#variants/fischer/utils/parse-side-to-move'
 
 export function parsePosition(fen: string): ChessPosition | null {
 	const bits = fen.trim().split(' ')
@@ -21,14 +21,16 @@ export function parsePosition(fen: string): ChessPosition | null {
 	const fullMoveNumberBit = bits[5] ?? '1'
 
 	const pieces = parsePieces(piecesBit)
+	if (!pieces) {
+		return null
+	}
 	const sideToMove = parseSideToMove(sideToMoveBit)
-	const castling = parseCastling(castlingBit)
+	const castling = parseCastling(castlingBit, pieces)
 	const enPassantTarget = parseSquare(enPassantTargetBit)
 	const halfMoveClock = parseInt(halfMoveClockBit)
 	const fullMoveNumber = parseInt(fullMoveNumberBit)
 
 	if (
-		!pieces ||
 		!sideToMove ||
 		!castling ||
 		enPassantTarget === null ||

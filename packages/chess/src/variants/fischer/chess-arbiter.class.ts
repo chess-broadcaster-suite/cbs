@@ -1,17 +1,17 @@
 import type { ChessArbiterInterface } from '#interfaces/chess-arbiter.interface'
 import type { ChessMoveDescriptorInterface } from '#interfaces/chess-move-descriptor.interface'
-import type { ChessMove } from '#variants/default/types/chess-move.type'
-import type { ChessPosition } from '#variants/default/types/chess-position.type'
+import type { ChessMove } from '#variants/fischer/types/chess-move.type'
+import type { ChessPosition } from '#variants/fischer/types/chess-position.type'
 
-import { describeLegalMove } from '#variants/default/utils/describe-legal-move.util'
-import { findAMove } from '#variants/default/utils/find-a-move.util'
-import { getLegalMoves } from '#variants/default/utils/get-legal.moves'
-import { isIdenticalPosition } from '#variants/default/utils/is-identical-position.util'
-import { isLegalMove } from '#variants/default/utils/is-legal-move.util'
-import { isLegalPosition } from '#variants/default/utils/is-legal-position.util'
-import { makeALegalMove } from '#variants/default/utils/make-a-legal-move.util'
-import { parsePosition } from '#variants/default/utils/parse-position.util'
-import { positionToFen } from '#variants/default/utils/position-to-fen.util'
+import { describeLegalMove } from '#variants/fischer/utils/describe-legal-move.util'
+import { findAMove } from '#variants/fischer/utils/find-a-move.util'
+import { getLegalMoves } from '#variants/fischer/utils/get-legal.moves'
+import { isIdenticalPosition } from '#variants/fischer/utils/is-identical-position.util'
+import { isLegalMove } from '#variants/fischer/utils/is-legal-move.util'
+import { isLegalPosition } from '#variants/fischer/utils/is-legal-position.util'
+import { makeALegalMove } from '#variants/fischer/utils/make-a-legal-move.util'
+import { parsePosition } from '#variants/fischer/utils/parse-position.util'
+import { positionToFen } from '#variants/fischer/utils/position-to-fen.util'
 
 class ChessArbiter implements ChessArbiterInterface<ChessPosition, ChessMove> {
 	public isIdenticalPosition(position: ChessPosition, anotherPosition: ChessPosition): boolean {
