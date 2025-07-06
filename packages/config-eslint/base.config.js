@@ -18,6 +18,7 @@ export const baseConfig = [
 	{
 		rules: {
 			'no-restricted-imports': 'off',
+			'no-console': ['error'],
 			'@typescript-eslint/no-restricted-imports': [
 				'error',
 				{

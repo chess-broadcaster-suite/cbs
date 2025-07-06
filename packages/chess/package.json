@@ -1,6 +1,6 @@
 {
 	"name": "@chess-broadcaster-suite/chess",
-	"version": "0.0.1",
+	"version": "0.1.0",
 	"description": "",
 	"author": "noskillonlyluck",
 	"license": "MIT",
@@ -52,7 +52,8 @@
 		"#*": "./dist/*.js"
 	},
 	"exports": {
-		".": "./dist/index.js"
+		"./generics": "./dist/index.js",
+		"./fischer": "./dist/variants/fischer/index.js"
 	},
 	"files": [
 		"dist"

@@ -4,6 +4,6 @@ import type { ChessPieceInterface } from '#interfaces/chess-piece.interface'
 
 export interface ChessPositionInterface {
 	history?: unknown
-	pieces: Record<ChessSquare, ChessPieceInterface | undefined>
+	pieces: Partial<Record<ChessSquare, ChessPieceInterface | undefined>>
 	sideToMove: ChessColour
 }
