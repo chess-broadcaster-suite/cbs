@@ -1,11 +1,13 @@
 import { ChessRank } from '#enums/chess-rank.enum'
 
 export function parseRank(string: string): ChessRank | null {
-	if (string.length < 1) {
+	const trimmed = string.trim()
+
+	if (trimmed.length < 1) {
 		return null
 	}
 
-	switch (string[0]) {
+	switch (trimmed[0]) {
 		case '1':
 			return ChessRank.FIRST
 		case '2':

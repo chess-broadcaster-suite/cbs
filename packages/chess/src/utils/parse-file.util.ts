@@ -1,11 +1,12 @@
 import { ChessFile } from '#enums/chess-file.enum'
 
 export function parseFile(string: string): ChessFile | null {
-	if (string.length < 1) {
+	const trimmed = string.trim()
+	if (trimmed.length < 1) {
 		return null
 	}
 
-	switch (string[0].toUpperCase()) {
+	switch (trimmed[0].toUpperCase()) {
 		case 'A':
 			return ChessFile.A
 		case 'B':
