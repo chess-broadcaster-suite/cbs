@@ -68,7 +68,7 @@ describe(parsePieces, () => {
 		})
 	})
 
-	it('returns null if there are not exactly 8 lines of 8 pieces each', () => {
+	it('returns null if there are not 8 lines of 8 pieces each', () => {
 		expect(parsePieces('')).toBe(null)
 		expect(parsePieces('r1bqk2r/1p1nppp/p1pb1n2/3p4/2PPp3/1PN1P3/PBQNBPPP/R3K2R')).toBe(null)
 		expect(parsePieces('r1bqk2r/1p1n1ppp/p1pb1n2/3p4/2PPp3/1PN1P3/PBQNBPPP/R3K2R/KK')).toBe(null)
