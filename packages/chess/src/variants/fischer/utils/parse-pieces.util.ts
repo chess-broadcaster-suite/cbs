@@ -31,7 +31,7 @@ export function parsePieces(subfen: string): Record<ChessSquare, ChessPiece | un
 				case 'b':
 				case 'n':
 				case 'p':
-					result[(63 - y * 8 - pieceCount) as ChessSquare] = parsePiece(ch)!
+					result[(63 - y * 8 - (7 - pieceCount)) as ChessSquare] = parsePiece(ch)!
 					pieceCount += 1
 					continue
 				case '1':
@@ -44,7 +44,7 @@ export function parsePieces(subfen: string): Record<ChessSquare, ChessPiece | un
 				case '8':
 					const numb = parseInt(ch)
 					for (let i = 0; i < numb; i++) {
-						result[(63 - y * 8 - pieceCount) as ChessSquare] = undefined
+						result[(63 - y * 8 - (7 - pieceCount)) as ChessSquare] = undefined
 						pieceCount += 1
 						continue
 					}
@@ -58,6 +58,6 @@ export function parsePieces(subfen: string): Record<ChessSquare, ChessPiece | un
 			return null
 		}
 	}
-
+	console.log('res', result)
 	return result
 }
