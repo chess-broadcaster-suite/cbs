@@ -6,6 +6,9 @@ Typescript-based Turborepo with pnpm, prettier & eslint.
 ### @chess-broadcaster-suite/uci
 Implementation of the UCI protocol
 
+### @chess-broadcaster-suite/chess
+Chess logic & abstractions above it. ATM a very hot mess
+
 ### @chess-broadcaster-suite/config-eslint
 Highly opinionated flat-config(s) to use across the repo
 
