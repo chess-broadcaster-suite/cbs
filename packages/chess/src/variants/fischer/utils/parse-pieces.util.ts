@@ -58,6 +58,5 @@ export function parsePieces(subfen: string): Record<ChessSquare, ChessPiece | un
 			return null
 		}
 	}
-	console.log('res', result)
 	return result
 }
