@@ -5,7 +5,7 @@ import type { PositionHistory } from '#variants/fischer/types/position-history.t
 
 export type ChessPosition = ChessPositionInterface & {
 	history: PositionHistory
-	pieces: Record<ChessSquare, ChessPiece | undefined>
+	pieces: Partial<Record<ChessSquare, ChessPiece | undefined>>
 	whiteKing: ChessSquare
 	blackKing: ChessSquare
 }

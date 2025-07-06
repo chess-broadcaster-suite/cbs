@@ -7,7 +7,7 @@ import { ChessPieceType } from '#variants/fischer/enums/chess-piece-type.enum'
 
 export function squareUnderAttack(
 	square: ChessSquare,
-	pieces: Record<ChessSquare, ChessPiece | undefined>,
+	pieces: Partial<Record<ChessSquare, ChessPiece | undefined>>,
 	sideToAttack: ChessColour,
 ): boolean {
 	const { file, rank } = squareToCoordinates(square)

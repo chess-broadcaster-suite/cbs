@@ -19,7 +19,7 @@ export function positionToFen(position: ChessPosition): string {
 	return [pieces, sideToMove, castling, enPassantTarget, halfMoveClock, fullMoveNumber].join(' ')
 }
 
-function piecesToString(pieces: Record<ChessSquare, ChessPiece | undefined>): string {
+function piecesToString(pieces: Partial<Record<ChessSquare, ChessPiece | undefined>>): string {
 	const rows: string[] = []
 	let row = ''
 	let emptyCount = 0
