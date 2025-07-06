@@ -18,7 +18,7 @@ export function squareUnderAttack(
 			if (piece === undefined) {
 				continue
 			}
-			if (piece.colour === sideToAttack) {
+			if (piece.colour !== sideToAttack) {
 				break
 			}
 			switch (piece.type) {
@@ -42,7 +42,7 @@ export function squareUnderAttack(
 			if (piece === undefined) {
 				continue
 			}
-			if (piece.colour === sideToAttack) {
+			if (piece.colour !== sideToAttack) {
 				break
 			}
 			switch (piece.type) {
@@ -67,7 +67,7 @@ export function squareUnderAttack(
 			if (piece === undefined) {
 				continue
 			}
-			if (piece.colour === sideToAttack) {
+			if (piece.colour !== sideToAttack) {
 				break
 			}
 			switch (piece.type) {
@@ -92,7 +92,7 @@ export function squareUnderAttack(
 			if (piece === undefined) {
 				continue
 			}
-			if (piece.colour === sideToAttack) {
+			if (piece.colour !== sideToAttack) {
 				break
 			}
 			switch (piece.type) {
@@ -117,7 +117,7 @@ export function squareUnderAttack(
 			if (piece === undefined) {
 				continue
 			}
-			if (piece.colour === sideToAttack) {
+			if (piece.colour !== sideToAttack) {
 				break
 			}
 			switch (piece.type) {
@@ -147,7 +147,7 @@ export function squareUnderAttack(
 			if (piece === undefined) {
 				continue
 			}
-			if (piece.colour === sideToAttack) {
+			if (piece.colour !== sideToAttack) {
 				break
 			}
 			switch (piece.type) {
@@ -177,7 +177,7 @@ export function squareUnderAttack(
 			if (piece === undefined) {
 				continue
 			}
-			if (piece.colour === sideToAttack) {
+			if (piece.colour !== sideToAttack) {
 				break
 			}
 			switch (piece.type) {
@@ -206,7 +206,7 @@ export function squareUnderAttack(
 			if (piece === undefined) {
 				continue
 			}
-			if (piece.colour === sideToAttack) {
+			if (piece.colour !== sideToAttack) {
 				break
 			}
 			switch (piece.type) {

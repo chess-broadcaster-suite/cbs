@@ -105,7 +105,7 @@ function validateCastling(position: ChessPosition): boolean {
 
 	let whiteKingFile: ChessFile | undefined
 	if (whiteK !== undefined || whiteQ !== undefined) {
-		for (let i = ChessSquare.B1; i < ChessSquare.H1; i++) {
+		for (let i = ChessSquare.B1; i <= ChessSquare.G1; i++) {
 			const king = pieces[i]
 			if (king?.colour === ChessColour.WHITE && king?.type === ChessPieceType.KING) {
 				whiteKingFile = fileFromSquare(i)
@@ -115,8 +115,8 @@ function validateCastling(position: ChessPosition): boolean {
 
 		if (
 			whiteKingFile === undefined ||
-			(whiteK !== undefined && whiteKingFile > whiteK % 8) ||
-			(whiteQ !== undefined && whiteKingFile < whiteQ % 8)
+			(whiteK !== undefined && whiteKingFile > whiteK) ||
+			(whiteQ !== undefined && whiteKingFile < whiteQ)
 		) {
 			return false
 		}
@@ -124,9 +124,9 @@ function validateCastling(position: ChessPosition): boolean {
 
 	let blackKingFile: ChessFile | undefined
 	if (blackK !== undefined || blackQ !== undefined) {
-		for (let i = ChessSquare.B8; i < ChessSquare.H8; i++) {
+		for (let i = ChessSquare.B8; i <= ChessSquare.G8; i++) {
 			const king = pieces[i]
-			if (king?.colour === ChessColour.WHITE && king?.type === ChessPieceType.KING) {
+			if (king?.colour === ChessColour.BLACK && king?.type === ChessPieceType.KING) {
 				blackKingFile = fileFromSquare(i)
 				break
 			}
