@@ -9,13 +9,13 @@
 		"pnpm": ">=10"
 	},
 	"devDependencies": {
-		"eslint": "^9.32.0",
+		"eslint": "^9.34.0",
 		"eslint-config-prettier": "^10.1.5",
 		"eslint-config-turbo": "^2.5.4",
 		"eslint-plugin-sort": "^4.0.0",
 		"eslint-plugin-turbo": "^2.5.4",
 		"prettier": "^3.6.2",
-		"typescript-eslint": "^8.38.0"
+		"typescript-eslint": "^8.41.0"
 	},
 	"repository": {
 		"type": "git",
